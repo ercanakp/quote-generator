@@ -18,7 +18,7 @@ async function getQuote() {
     try {
         const response = await fetch(proxyUrl + apiUrl);
         const data = await response.json();
-
+  
         // Reduce font size for long quotes
         if (data.quoteText.length > 120) {
             quoteText.classList.add('long-quote');
